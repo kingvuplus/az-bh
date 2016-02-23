@@ -44,7 +44,7 @@ class About(Screen):
 		self["ImageVersion"] = StaticText(ImageVersion)
 		AboutText += ImageVersion + "\n"
 
-		if fileExists("/proc/stb/info/azmodel"):
+		if fileExists("/proc/stb/info/vumodel"):
 			AboutText += _("DVB drivers: ") + about.getDriverVuInstalledDate() + "\n"
 		else:
 			AboutText += _("DVB drivers: ") + about.getDriverInstalledDate() + "\n"
